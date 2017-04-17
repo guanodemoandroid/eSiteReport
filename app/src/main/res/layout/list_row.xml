@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:padding="8dp">
+
+    <!-- Thumbnail Image -->
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp" />
+
+
+
+    <TextView
+        android:id="@+id/tvRepDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textSize="@dimen/name"
+        android:textStyle="bold"
+        android:text="Date"
+        />
+
+    <!-- Worth -->
+    <TextView
+        android:id="@+id/tvRepTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvRepDate"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textSize="@dimen/worth"
+        android:text="Title"
+        />
+
+    <!-- Source -->
+    <TextView
+        android:id="@+id/tvRepDesc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvRepTitle"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textColor="@color/wealthsource"
+        android:textSize="@dimen/source"
+        android:text="Description"
+        />
+
+    <!-- Year -->
+    <TextView
+        android:id="@+id/tvRepLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/year"
+        android:text="Location"
+        android:textSize="@dimen/InYear"
+        android:layout_below="@+id/tvRepDesc"
+        />
+
+    <TextView
+        android:id="@+id/tvRepID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:layout_below="@+id/thumbnail"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="13dp"
+        />
+
+
+</RelativeLayout>

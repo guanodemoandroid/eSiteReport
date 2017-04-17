@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="13dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvRepID"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="ID" />
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Project Title" />
+
+        <EditText
+            android:id="@+id/etRepTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/etRepDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="description" />
+
+        <EditText
+            android:id="@+id/etRepDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="date" />
+
+        <EditText
+            android:id="@+id/etRepLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="location" />
+
+        <EditText
+            android:id="@+id/etRepPath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="http://www.innovacia.com.my/mobile/sitereport/" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonChoose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="Choose Image" />
+
+            <Button
+                android:id="@+id/btnMaterial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="Material" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mobilesiri" />
+
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter a Name" />
+
+        <Button
+            android:id="@+id/buttonUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+    </LinearLayout>
+</ScrollView>
